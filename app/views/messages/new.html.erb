@@ -1,0 +1,16 @@
+<h1>投稿</h1>
+<hr>
+<%= form_for @message do |m| %>
+<!--  <p>ニックネーム</p>-->
+  <%#= m.text_field :nickname, :class => "form-control my-form" %>
+  <p>内容</p>
+  <%= m.text_area :text, :class => "form-control my-form" %>
+  <p>場所</p>
+  <%= m.text_field :location, :class => "form-control my-form" %>
+  <p>イメージ</p>
+  <%= m.text_field :image, :class => "form-control my-form" %>
+  <hr>
+  <%= m.submit "登録する", :class => "btn btn-primary" %>
+<% end %>
+<hr>
+<a href="/messages" class="btn btn-info">トップへ戻る</a>

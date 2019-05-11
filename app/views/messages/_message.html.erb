@@ -1,0 +1,9 @@
+<hr>
+  <p>No.<a href="/messages/<%= message.id %>"><%= message.id %>:
+  <p>ニックネーム: <%= message.user.nickname %></p>
+  <p>コメント: <%= message.text %></p>
+  <p>時間: <%= simple_time(message.created_at.in_time_zone('Tokyo')) %></p>
+  <!--    <p><%#= m.location %></p>-->
+  <!--    <p><%#= m.image %></p>-->
+<%# end %>
+

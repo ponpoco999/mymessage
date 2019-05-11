@@ -1,0 +1,11 @@
+<h1>投稿</h1>
+<hr>
+<p><%= @nickname %></p>
+<p><%= @message.text %></p>
+<p><%= @message.location %></p>
+<p><%= @message.image %></p>
+<hr>
+<p><a href="/messages" class="btn btn-info">トップに戻る</a></p>
+<p><a href="/messages/<%= @message.id %>/edit" class="btn btn-success">投稿を編集する</a></p>
+<p><a href="/messages/<%= @message.id %>" data-method="delete" class="btn btn-danger">投稿を削除</a></p>
+

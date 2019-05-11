@@ -1,0 +1,7 @@
+<h1>ユーザー一覧</h1>
+<hr>
+<% @users.each do |u| %>
+  <p><a href="/users/<%= u.id %>"><%= u.nickname %>さん</a></p>
+  <hr>
+<% end %>
+<a href="/messages" class="btn btn-info">トップに戻る</a>

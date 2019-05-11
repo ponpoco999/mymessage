@@ -1,0 +1,14 @@
+<h1>投稿を編集する</h1>
+<hr>
+<%= form_for @message do |m| %>
+  <p>内容</p>
+  <%= m.text_area :text %>
+  <p>場所</p>
+  <%= m.text_field :location %>
+  <p>イメージ</p>
+  <%= m.text_field :image %>
+  <hr>
+  <%= m.submit "変更する", :class => "btn btn-success" %>
+<% end %>
+  <br>
+<a href="/messages/<%= @message.id %>" class="btn btn-info">投稿に戻る</a>

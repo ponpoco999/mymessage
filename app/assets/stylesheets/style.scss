@@ -1,0 +1,42 @@
+.my-form{
+  width: 500px;
+}
+
+.navbar-toggle {
+  z-index: 2;
+}
+
+.navbar-brand {
+  font-size: 45px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  margin: auto;
+  text-align:center;
+}
+
+@media (min-width: 768px) {
+  .navbar-brand-center {
+    margin-left: 0 !important;
+  }
+}
+
+.main-page{
+  margin-top: 60px;
+}
+
+.header-image{
+  background-image: url(kagoneko.jpg);
+  height: 500px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.header-content{
+  font-size: 80px;
+  padding-top: 50px;
+  color: red;
+}
